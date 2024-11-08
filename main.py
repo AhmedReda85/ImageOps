@@ -10,27 +10,39 @@ def input_value():
 def more_bright(value):
     print("Enter a value")
     input_value(value)
-    h,w=np.shape(img)
+    image=np.copy(img)
+    h,w=np.shape(image)
     for col in range(w):
         for row in range(h):
-            img[col][row]=img[col][row]*value
-    cv2.imshow("Bright Image",img)
+            image[col][row]=image[col][row]*value
+    cv2.imshow("Bright Image",image)
     
 
 def more_dark(value):
     print("Enter a value")
     input_value(value)
-    h,w=np.shape(img)
+    image=np.copy(img)
+    h,w=np.shape(image)
     for col in range(w):
         for row in range(h):
-            img[col][row]=img[col][row]/value
-    cv2.imshow("Dark Image",img)
+            image[col][row]=image[col][row]/value
+    cv2.imshow("Dark Image",image)
     
 def negative():
+    image=np.copy(img)
+    h,w=np.shape(image)
+    for col in range(w):
+        for row in range(h):
+            image[col][row]=1-image[col][row]
+    cv2.imshow("Image",image)
+def power_law(value):
+    gamma_value=input_value(value)
+    image=np.copy(img)
     h,w=np.shape(img)
     for col in range(w):
         for row in range(h):
-            img[col][row]=1-img[col][row]
+            image[col][row]=(2*image[col][row])**gamma_value
+    cv2.imshow("Image",image)
 
 
 
