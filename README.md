@@ -140,9 +140,3 @@ Found a bug? Want to add a feature? Contributions are welcome! Feel free to:
 1. Fork the repository
 2. Create your feature branch
 3. Send a pull request
-
-
-# 🎨 Image Processing Toolkit
-
-[... previous content remains the same until the Example Transformations section ...]
-
