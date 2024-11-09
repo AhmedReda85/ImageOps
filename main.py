@@ -45,7 +45,6 @@ def power_law():
     return image
 
 def log_transformation():
-    # To enhance details in dark regions
     print("Enter a value")
     scaling_factor_value=input_value()
     image=np.copy(img*255)
