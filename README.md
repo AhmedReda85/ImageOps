@@ -127,10 +127,10 @@ negative = negative()                  # Instant negative
 ### Filters Comparison
 | Filter Type | Result |
 |------------|--------|
-| Average Filter | ![Average](screenshots/Average_filter.png) |
-| Median Filter | ![Median](screenshots/Median_filter.png) |
-| Max Filter | ![Max](screenshots/Max_filter.png) |
-| Min Filter | ![Min](screenshots/Min_filter.png) |
+| Average Filter | ![Average](screenshots/Average_Filter.png) |
+| Median Filter | ![Median](screenshots/Median_Filter.png) |
+| Max Filter | ![Max](screenshots/Max_Filter.png) |
+| Min Filter | ![Min](screenshots/Min_Filter.png) |
 
 
 
